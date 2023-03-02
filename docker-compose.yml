@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  go_temp:
+    image: go_temp:0.0.1
+    ports:
+      - 8888:8888
+    environment:
+      CONSUL_HOST: 192.168.88.18
+      CONSUL_PORT: 8500
+      INSTANCE_PORT: 8888
+      INSTANCE_HOST: 192.168.88.18
+
+
+    
